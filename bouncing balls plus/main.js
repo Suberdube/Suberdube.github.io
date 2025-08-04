@@ -135,7 +135,7 @@ class EvilCircle extends Shape {
 }
 
 
-// creates balls
+// creates balls and counts them 
 const balls = [];
 
 while (balls.length < 25) {
@@ -149,6 +149,8 @@ while (balls.length < 25) {
     size
   );
   balls.push(ball);
+  ballCount++;
+  para.textContent = `Ball count: ${ballCount}`;
 }
 // animation loop
 function loop() {
