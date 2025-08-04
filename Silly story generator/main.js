@@ -50,8 +50,14 @@ function result() {
     const name = customName.value;
     newStory = newStory.replace('Bob', name);
   }
+  // If UK radio button is checked, convert units
+  if (document.getElementById("uk").checked) {
+    const weight = Math.round(300 * 0.0714286) + ' stone'; // lbs → stones
+    const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade'; // F → C
 
-  }
+    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('94 fahrenheit', temperature);
+  
 
   // Show story
   story.textContent = newStory;
