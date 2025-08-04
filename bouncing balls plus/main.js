@@ -2,7 +2,7 @@
 Name: Brydon Burrell
 	File: index.html
 	Date: 2025/08/02
-     This html is for a bouncing balls animation
+     This html is for a bouncing balls animation with some extra features!
 */
 
 
