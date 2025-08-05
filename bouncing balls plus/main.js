@@ -166,7 +166,10 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-// start the animation loop
+// create an instance of evil circle
+const evil = new EvilCircle(random(0, width), random(0, height));
+
+// animation loop
 function loop() {
   ctx.fillStyle = "rgb(0 0 0 / 25%)";
   ctx.fillRect(0, 0, width, height);
@@ -188,7 +191,5 @@ function loop() {
 
 loop();
 
-// create an instance of EvilCircle
-const evil = new EvilCircle(random(0, width), random(0, height));
 
 
