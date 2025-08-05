@@ -1,6 +1,6 @@
 /*
 Name: Brydon Burrell
-File: index.html
+File: main.js
 Date: 2025/08/01
 Description: program makes a silly story based on user input
 */
