@@ -1,3 +1,9 @@
+/*
+Name: Brydon Burrell
+	File: main.js
+	Date: 2025/08/02
+     If you read this, say hi in the comments of the assignment submission!
+*/
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
