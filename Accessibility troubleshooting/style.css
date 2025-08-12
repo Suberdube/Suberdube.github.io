@@ -5,7 +5,6 @@
 */
 
 /* || General setup */
-
 html, body {
   margin: 0;
   padding: 0;
@@ -22,9 +21,8 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
+/* || Typography */
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
@@ -34,19 +32,19 @@ p, input, li, table, label {
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
@@ -56,8 +54,7 @@ p, li, table {
 }
 
 /* || header layout */
-
-div[class="nav"], article, footer, .secondary {
+nav, article, footer, .secondary {
   background-color: rgb(93, 93, 93);
 }
 
@@ -69,36 +66,46 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ff80ff; /* fixed missing # */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: white
+  color: #000; /* improved contrast */
+  background-color: #fff; /* improved contrast */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
-div[class="nav"] .search {
+nav a:focus,
+nav a:hover {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+  background-color: #eee;
+}
+
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -123,8 +130,13 @@ div[class="nav"] .search {
   color: white;
 }
 
-/* || main layout */
+.search input[type="submit"]:focus,
+.search input[type="submit"]:hover {
+  outline: 3px solid yellow;
+  outline-offset: 2px;
+}
 
+/* || main layout */
 main {
   display: flex;
 }
@@ -142,7 +154,6 @@ footer {
 }
 
 /* Table styling */
-
 table {
   width: 100%;
   background-color: #dde;
@@ -166,7 +177,6 @@ tbody tr:nth-child(odd) {
 }
 
 /* styling content images and audio */
-
 img, audio {
   display: block;
   margin: 0 auto;
@@ -177,7 +187,6 @@ audio {
 }
 
 /* Comments styling */
-
 .comments {
   background-color: #def;
   padding: 10px;
@@ -187,12 +196,8 @@ audio {
   cursor: pointer;
 }
 
-.comments font[size="6"] {
+.comments h2 {
   font-size: 2rem;
-}
-
-.comments font[size="6"]:nth-of-type(2) {
-  margin-bottom: 0;
 }
 
 .comment-form {
@@ -229,6 +234,14 @@ audio {
   background: #333;
   border: 0;
   color: white;
+}
+
+.comment-form input[type="submit"]:focus,
+.comment-form input[type="submit"]:hover,
+.show-hide:focus,
+.show-hide:hover {
+  outline: 3px solid yellow;
+  outline-offset: 2px;
 }
 
 .comment-form input[type="submit"] {
