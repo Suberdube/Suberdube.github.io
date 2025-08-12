@@ -55,7 +55,7 @@ p, li, table {
 
 /* || header layout */
 nav, article, footer, .secondary {
-  background-color: rgb(93, 93, 93);
+  background-color: rgb(255, 255, 255);
 }
 
 article, footer, .secondary {
@@ -68,7 +68,7 @@ article {
 
 nav {
   height: 50px;
-  background-color: #ff80ff; /* fixed missing # */
+  background-color: #ffffff; /* fixed missing # */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
