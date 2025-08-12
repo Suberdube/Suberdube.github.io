@@ -58,7 +58,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: rgb(93, 93, 93);
 }
 
 article, footer, .secondary {
@@ -95,7 +95,7 @@ div[class="nav"] a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: white
 }
 
 div[class="nav"] .search {
